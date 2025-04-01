@@ -1,6 +1,8 @@
 "use client"
+"use client";
+
 import { useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CalendarIcon } from "lucide-react";
@@ -15,73 +17,77 @@ import {
 import kla from "@/public/logos/kla.png";
 import netflix from "@/public/logos/netflix.png";
 import next from "@/public/logos/next.png";
-// Lista de encontros
-const encontros = [
-    {
-      nome: "Abertura - NEXT 2025 🚀🧡",
-      logo: next, // Referência direta à variável importada
-      data: "09 de abril de 2025",
-      descricao:
-        "Evento de abertura do NEXT com foco em soft skills e perspectivas do mercado jurídico.",
-      detalhes:
-        "O encontro no BTG Pactual marca a abertura oficial do programa NEXT 2025. Será realizado das 18h às 20h, com painéis sobre habilidades interpessoais, liderança jovem e desafios da nova geração no mercado jurídico.",
-    },
-    {
-      nome: "KLA",
-      logo: kla, // Referência direta à variável importada
-      data: "06 de junho de 2025",
-      descricao:
-        "Encontro com foco em competências interpessoais e cases de liderança jurídica.",
-      detalhes:
-        "Durante o encontro na KLA, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
-    },
-    {
-      nome: "NETFLIX",
-      logo: netflix, // Referência direta à variável importada
-      data: "08 de agosto de 2025",
-      descricao:
-        "Discussão sobre inovação, comunicação e protagonismo de carreira no Direito.",
-      detalhes:
-        "No encontro com a Netflix, exploraremos como inovação e storytelling impactam carreiras jurídicas, com convidados da área de legal operations e conteúdo.",
-    },
-  ];
+
+interface Encontro {
+  nome: string;
+  logo: StaticImageData;
+  data: string;
+  descricao: string;
+  detalhes: string;
+}
+
+const encontros: Encontro[] = [
+  {
+    nome: "Abertura - NEXT 2025 🚀🧡",
+    logo: next,
+    data: "09 de abril de 2025",
+    descricao:
+      "Evento de abertura do NEXT com foco em soft skills e perspectivas do mercado jurídico.",
+    detalhes:
+      "O encontro no BTG Pactual marca a abertura oficial do programa NEXT 2025. Será realizado das 18h às 20h, com painéis sobre habilidades interpessoais, liderança jovem e desafios da nova geração no mercado jurídico.",
+  },
+  {
+    nome: "KLA",
+    logo: kla,
+    data: "06 de junho de 2025",
+    descricao:
+      "Encontro com foco em competências interpessoais e cases de liderança jurídica.",
+    detalhes:
+      "Durante o encontro na KLA, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+  },
+  {
+    nome: "NETFLIX",
+    logo: netflix,
+    data: "08 de agosto de 2025",
+    descricao:
+      "Discussão sobre inovação, comunicação e protagonismo de carreira no Direito.",
+    detalhes:
+      "No encontro com a Netflix, exploraremos como inovação e storytelling impactam carreiras jurídicas, com convidados da área de legal operations e conteúdo.",
+  },
+];
 
 export default function EncontrosNext() {
   const [modalAberto, setModalAberto] = useState(false);
-  const [encontroSelecionado, setEncontroSelecionado] = useState(null);
+  const [encontroSelecionado, setEncontroSelecionado] = useState<Encontro | null>(null);
 
-  const abrirModal = (encontro) => {
+  const abrirModal = (encontro: Encontro) => {
     setEncontroSelecionado(encontro);
     setModalAberto(true);
   };
 
   return (
     <div className="min-h-screen bg-white text-neutral-800 px-6 py-10 font-sans">
-      {/* Container principal com largura de 80% */}
-      <div className="w-[85%] mx-auto w-4/5">
-        {/* Logo centralizado */}
+      <div className="w-[90%] mx-auto">
+        {/* Logo */}
         <div className="flex justify-center mb-6">
-          <Image
-            src={next}
-            alt="Logo NEXT"
-            width={220}
-            height={80}
-          />
+          <Image src={next} alt="Logo NEXT" width={220} height={80} />
         </div>
 
-        {/* Título e descrição centralizados */}
+        {/* Título e descrição */}
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold mb-4">Encontros NEXT 2025</h1>
           <p className="text-neutral-700 text-lg">
             Ao longo de 2025, o NEXT promove encontros exclusivos com empresas e
             escritórios parceiros, com foco no desenvolvimento de{" "}
-            <strong>soft skills</strong>, <strong>conectando com escritórios/empresas e conhecendo áreas,</strong> <strong>capacitações práticas</strong>{" "}
-            e<strong> cursos executivos</strong>. Uma jornada para fortalecer
+            <strong>soft skills</strong>,{" "}
+            <strong>conectando com escritórios/empresas</strong>,{" "}
+            <strong>capacitações práticas</strong> e{" "}
+            <strong>cursos executivos</strong>. Uma jornada para fortalecer
             conexões e preparar os talentos do amanhã.
           </p>
         </div>
 
-        {/* Grid de cards de encontros */}
+        {/* Lista de encontros */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {encontros.map((encontro, index) => (
             <Card
@@ -122,7 +128,7 @@ export default function EncontrosNext() {
         </div>
       </div>
 
-      {/* Modal para detalhes do encontro */}
+      {/* Modal */}
       <Dialog open={modalAberto} onOpenChange={setModalAberto}>
         <DialogContent className="max-w-md">
           {encontroSelecionado && (
