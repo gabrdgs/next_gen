@@ -32,9 +32,9 @@ const encontros: Encontro[] = [
     logo: next,
     data: "09 de abril de 2025",
     descricao:
-      "Evento de abertura do NEXT com foco em soft skills e perspectivas do mercado jurídico.",
+      "Evento de abertura do NEXT com foco em conhecer a nova turma de bolsistas e conectar jovens e mentores",
     detalhes:
-      "O encontro no BTG Pactual marca a abertura oficial do programa NEXT 2025. Será realizado das 18h às 20h, com painéis sobre habilidades interpessoais, liderança jovem e desafios da nova geração no mercado jurídico.",
+      "O encontro no BTG Pactual marca a abertura oficial do programa NEXT 2025. Será realizado das 18h às 20h, com painéis de apresentação e uma dinâmica de interação.",
   },
   {
     nome: "KLA",
