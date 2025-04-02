@@ -1,4 +1,3 @@
-"use client"
 "use client";
 
 import { useState } from "react";
@@ -17,6 +16,7 @@ import {
 import kla from "@/public/logos/kla.png";
 import netflix from "@/public/logos/netflix.png";
 import next from "@/public/logos/next.png";
+import tozzini from "@/public/logos/tozzini.png";
 
 interface Encontro {
   nome: string;
@@ -43,7 +43,7 @@ const encontros: Encontro[] = [
     descricao:
       "Encontro com foco em competências interpessoais e cases de liderança jurídica.",
     detalhes:
-      "Durante o encontro na KLA, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+      "Durante o encontro no KLA, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
   },
   {
     nome: "NETFLIX",
@@ -52,8 +52,17 @@ const encontros: Encontro[] = [
     descricao:
       "Discussão sobre inovação, comunicação e protagonismo de carreira no Direito.",
     detalhes:
-      "No encontro com a Netflix, exploraremos como inovação e storytelling impactam carreiras jurídicas, com convidados da área de legal operations e conteúdo.",
+      "Apresentação das principais áreas: Serão três apresentações principais — Litigation, Public Policy e Música e Entretenimento — seguidas por sessões de speed dating, onde os Nexters poderão interagir com diversas áreas utilizando cartões com perguntas.Além disso, haverá um painel sobre trajetórias de carreira: Em resposta ao interesse dos Nexters em LL.M. e diferentes trajetórias profissionais.",
   },
+  {
+    nome: "Tozzini  Freire",
+    logo: tozzini,
+    data: "24 de outubro de 2025",
+    descricao:
+      "Encontro com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
+    detalhes:
+      "Durante o encontro no Tozzini  Freire, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+  }
 ];
 
 export default function EncontrosNext() {
