@@ -196,7 +196,18 @@ export default function EncontrosNext() {
           {encontroSelecionado && (
             <>
               <DialogHeader>
-                <DialogTitle>{encontroSelecionado.nome}</DialogTitle>
+                <DialogTitle className="text-lg font-semibold">
+                  Encontro:
+                </DialogTitle>
+                <div className="flex justify-center mb-2">
+                  <Image
+                    src={encontroSelecionado.logo}
+                    alt={encontroSelecionado.nome}
+                    width={120}
+                    height={60}
+                    className="object-contain"
+                  />
+                </div>
                 <DialogDescription className="text-sm text-neutral-600 mb-2">
                   {encontroSelecionado.data}
                 </DialogDescription>
