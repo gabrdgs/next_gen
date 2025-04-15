@@ -17,6 +17,7 @@ import kla from "@/public/logos/kla.png";
 import netflix from "@/public/logos/netflix.png";
 import next from "@/public/logos/next.png";
 import tozzini from "@/public/logos/tozzini.png";
+import milbank from "@/public/logos/milbank.png";
 
 interface Encontro {
   nome: string;
@@ -24,6 +25,7 @@ interface Encontro {
   data: string;
   descricao: string;
   detalhes: string;
+  status: "Concluído" | "Em breve" | "Confirmado";
 }
 
 const encontros: Encontro[] = [
@@ -35,6 +37,17 @@ const encontros: Encontro[] = [
       "Evento de abertura do NEXT com foco em conhecer a nova turma de bolsistas e conectar jovens e mentores",
     detalhes:
       "O encontro no BTG Pactual marca a abertura oficial do programa NEXT 2025. Será realizado das 18h às 20h, com painéis de apresentação e uma dinâmica de interação.",
+    status: "Concluído",
+  },
+  {
+    nome: "Milbank LLP",
+    logo: milbank,
+    data: " 9 de maio de 2025",
+    descricao:
+      "Encontro 1: Com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
+    detalhes:
+      "Durante o encontro no Milbank, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+    status: "Em breve",
   },
   {
     nome: "KLA",
@@ -44,6 +57,17 @@ const encontros: Encontro[] = [
       "Encontro com foco em competências interpessoais e cases de liderança jurídica.",
     detalhes:
       "Durante o encontro no KLA, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+    status: "Confirmado",
+  },
+  {
+    nome: "Milbank LLP",
+    logo: milbank,
+    data: " 13 de junho de 2025",
+    descricao:
+      "Encontro 2: Com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
+    detalhes:
+      "Durante o encontro no Milbank, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+    status: "Confirmado"
   },
   {
     nome: "NETFLIX",
@@ -53,6 +77,17 @@ const encontros: Encontro[] = [
       "Discussão sobre inovação, comunicação e protagonismo de carreira no Direito.",
     detalhes:
       "Apresentação das principais áreas: Serão três apresentações principais — Litigation, Public Policy e Música e Entretenimento — seguidas por sessões de speed dating, onde os Nexters poderão interagir com diversas áreas utilizando cartões com perguntas.Além disso, haverá um painel sobre trajetórias de carreira: Em resposta ao interesse dos Nexters em LL.M. e diferentes trajetórias profissionais.",
+    status: "Confirmado"
+  },
+  {
+    nome: "Milbank LLP",
+    logo: milbank,
+    data: " 15 de agosto de 2025",
+    descricao:
+      "Encontro 3: Com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
+    detalhes:
+      "Durante o encontro no Milbank, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+    status: "Confirmado"
   },
   {
     nome: "Tozzini  Freire",
@@ -62,8 +97,10 @@ const encontros: Encontro[] = [
       "Encontro com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
     detalhes:
       "Durante o encontro no Tozzini  Freire, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+    status: "Confirmado"
   }
 ];
+
 
 export default function EncontrosNext() {
   const [modalAberto, setModalAberto] = useState(false);
@@ -124,6 +161,22 @@ export default function EncontrosNext() {
                   </div>
                 </div>
                 <p className="text-sm text-neutral-700">{encontro.descricao}</p>
+                <span
+                  className={`inline-block px-2 py-0.5 text-xs font-medium rounded-full
+    ${encontro.status === "Concluído"
+                      ? "bg-green-100 text-green-800"
+                      : encontro.status === "Confirmado"
+                        ? "bg-blue-100 text-blue-800"
+                        : "bg-yellow-100 text-yellow-800"
+                    }
+  `}
+                >
+                  {encontro.status === "Concluído"
+                    ? "Concluído"
+                    : encontro.status === "Confirmado"
+                      ? "Confirmado"
+                      : "Em breve"}
+                </span>
                 <Button
                   variant="outline"
                   className="w-full mt-2"
