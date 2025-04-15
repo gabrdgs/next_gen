@@ -18,6 +18,8 @@ import netflix from "@/public/logos/netflix.png";
 import next from "@/public/logos/next.png";
 import tozzini from "@/public/logos/tozzini.png";
 import milbank from "@/public/logos/milbank.png";
+import mf from "@/public/logos/mf.png";
+import bzcp from "@/public/logos/bzcp.png";
 
 interface Encontro {
   nome: string;
@@ -42,7 +44,7 @@ const encontros: Encontro[] = [
   {
     nome: "Milbank LLP",
     logo: milbank,
-    data: " 9 de maio de 2025",
+    data: "9 de maio de 2025",
     descricao:
       "Encontro 1: Com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
     detalhes:
@@ -62,12 +64,32 @@ const encontros: Encontro[] = [
   {
     nome: "Milbank LLP",
     logo: milbank,
-    data: " 13 de junho de 2025",
+    data: "13 de junho de 2025",
     descricao:
       "Encontro 2: Com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
     detalhes:
       "Durante o encontro no Milbank, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
-    status: "Confirmado"
+    status: "Confirmado",
+  },
+  {
+    nome: "Mattos Filho",
+    logo: mf,
+    data: "27 de junho de 2025",
+    descricao:
+      "Encontro com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
+    detalhes:
+      "Durante o encontro no Mattos Filho, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+    status: "Confirmado",
+  },
+  {
+    nome: "Bronstein",
+    logo: bzcp,
+    data: "12 de julho de 2025",
+    descricao:
+      "Encontro com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
+    detalhes:
+      "Durante o encontro no Bronstein, Zilberberg, Chueiri & Potenza, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+    status: "Confirmado",
   },
   {
     nome: "NETFLIX",
@@ -76,28 +98,28 @@ const encontros: Encontro[] = [
     descricao:
       "Discussão sobre inovação, comunicação e protagonismo de carreira no Direito.",
     detalhes:
-      "Apresentação das principais áreas: Serão três apresentações principais — Litigation, Public Policy e Música e Entretenimento — seguidas por sessões de speed dating, onde os Nexters poderão interagir com diversas áreas utilizando cartões com perguntas.Além disso, haverá um painel sobre trajetórias de carreira: Em resposta ao interesse dos Nexters em LL.M. e diferentes trajetórias profissionais.",
-    status: "Confirmado"
+      "Apresentação das principais áreas: Serão três apresentações principais — Litigation, Public Policy e Música e Entretenimento — seguidas por sessões de speed dating, onde os Nexters poderão interagir com diversas áreas utilizando cartões com perguntas. Além disso, haverá um painel sobre trajetórias de carreira: Em resposta ao interesse dos Nexters em LL.M. e diferentes trajetórias profissionais.",
+    status: "Confirmado",
   },
   {
     nome: "Milbank LLP",
     logo: milbank,
-    data: " 15 de agosto de 2025",
+    data: "15 de agosto de 2025",
     descricao:
       "Encontro 3: Com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
     detalhes:
       "Durante o encontro no Milbank, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
-    status: "Confirmado"
+    status: "Confirmado",
   },
   {
-    nome: "Tozzini  Freire",
+    nome: "Tozzini Freire",
     logo: tozzini,
     data: "24 de outubro de 2025",
     descricao:
       "Encontro com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
     detalhes:
-      "Durante o encontro no Tozzini  Freire, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
-    status: "Confirmado"
+      "Durante o encontro no Tozzini Freire, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+    status: "Confirmado",
   }
 ];
 
