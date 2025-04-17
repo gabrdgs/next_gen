@@ -57,9 +57,9 @@ const encontros: Encontro[] = [
     logo: google,
     data: "23 de maio de 2025",
     descricao:
-      "Foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
+      "Foco em trajetórias, apresentação da organização e cases de liderança jurídica.",
     detalhes:
-      "Durante o encontro no Google, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+      "Durante o encontro no Google haverá um workshop sobre o funcionamento do Legal dentro da empresa, conversando com o time juridico e conhecendo as principais áreas e habilidades aplicadas ao dia-a-dia.",
     status: "Confirmado",
   },
   {
