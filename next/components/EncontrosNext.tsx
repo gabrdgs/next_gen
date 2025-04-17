@@ -20,6 +20,7 @@ import tozzini from "@/public/logos/tozzini.png";
 import milbank from "@/public/logos/milbank.png";
 import mf from "@/public/logos/mf.png";
 import bzcp from "@/public/logos/bzcp.png";
+import google from "@/public/logos/google.png";
 
 interface Encontro {
   nome: string;
@@ -50,6 +51,16 @@ const encontros: Encontro[] = [
     detalhes:
       "Durante o encontro no Milbank, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
     status: "Em breve",
+  },
+  {
+    nome: "Google",
+    logo: google,
+    data: "23 de maio de 2025",
+    descricao:
+      "Foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
+    detalhes:
+      "Durante o encontro no Google, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+    status: "Confirmado",
   },
   {
     nome: "KLA",
