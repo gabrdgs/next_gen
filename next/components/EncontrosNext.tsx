@@ -68,6 +68,16 @@ const encontros: Encontro[] = [
       "Imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
     status: "Concluído",
   },
+    {
+    nome: "Milbank LLP",
+    logo: milbank,
+    data: "13 de junho de 2025",
+    descricao:
+      "Encontro 2: Com foco em competências interpessoais e cases de liderança jurídica.",
+    detalhes:
+      "Imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+    status: "Concluído",
+  },
   {
     nome: "Mattos Filho",
     logo: mf,
