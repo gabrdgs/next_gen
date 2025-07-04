@@ -73,9 +73,9 @@ const encontros: Encontro[] = [
     logo: mf,
     data: "27 de junho de 2025",
     descricao:
-      "Encontro com foco em trajetórias, competências interpessoais e cases de liderança jurídica. Tema do encontro: a definir.",
+      "Encontro com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
     detalhes:
-      "A definir. Sugestões de tema encaminhadas por Ana Clara.",
+      "Encontro com foco em trajetórias, competências interpessoais e cases de liderança jurídica. Tema do encontro: a definir.",
     status: "Concluído",
   },
   {
@@ -85,7 +85,7 @@ const encontros: Encontro[] = [
     descricao:
       "Apresentação da área de Life Science.",
     detalhes:
-      "Apresentação detalhada sobre o segmento de Life Science, explorando práticas, desafios e oportunidades.",
+      "Encontro com foco em trajetórias, competências interpessoais e cases de liderança jurídica. Tema do encontro: a definir.",
     status: "Concluído",
   },
   {
