@@ -21,6 +21,12 @@ import milbank from "@/public/logos/milbank.png";
 import mf from "@/public/logos/mf.png";
 import bzcp from "@/public/logos/bzcp.png";
 import google from "@/public/logos/google.png";
+import demarest from "@/public/logos/demarest.png"
+import galdino from "@/public/logos/galdino.png"
+import lefosse from "@/public/logos/lefosse.png"
+import machadoMeyer from "@/public/logos/machadoMeyer.png"
+import pinheiroNeto from "@/public/logos/pinheiroNeto.png"
+import pravaler from "@/public/logos/pravaler.png"
 
 interface Encontro {
   nome: string;
@@ -39,28 +45,18 @@ const encontros: Encontro[] = [
     descricao:
       "Evento de abertura do NEXT com foco em conhecer a nova turma de bolsistas e conectar jovens e mentores",
     detalhes:
-      "O encontro no BTG Pactual marca a abertura oficial do programa NEXT 2025. Será realizado das 18h às 20h, com painéis de apresentação e uma dinâmica de interação.",
+      "O encontro no BTG Pactual marcou a abertura oficial do programa NEXT 2025, com painéis de apresentação e dinâmica de interação.",
     status: "Concluído",
   },
   {
     nome: "Milbank LLP",
     logo: milbank,
-    data: "9 de maio de 2025",
+    data: "09 de maio de 2025",
     descricao:
       "Encontro 1: Com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
     detalhes:
-      "Durante o encontro no Milbank, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
-    status: "Em breve",
-  },
-  {
-    nome: "Google",
-    logo: google,
-    data: "23 de maio de 2025",
-    descricao:
-      "Foco em trajetórias, apresentação da organização e cases de liderança jurídica.",
-    detalhes:
-      "Durante o encontro no Google haverá um workshop sobre o funcionamento do Legal dentro da empresa, conversando com o time juridico e conhecendo as principais áreas e habilidades aplicadas ao dia-a-dia.",
-    status: "Confirmado",
+      "Imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+    status: "Concluído",
   },
   {
     nome: "KLA",
@@ -69,28 +65,48 @@ const encontros: Encontro[] = [
     descricao:
       "Encontro com foco em competências interpessoais e cases de liderança jurídica.",
     detalhes:
-      "Durante o encontro no KLA, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
-    status: "Confirmado",
-  },
-  {
-    nome: "Milbank LLP",
-    logo: milbank,
-    data: "13 de junho de 2025",
-    descricao:
-      "Encontro 2: Com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
-    detalhes:
-      "Durante o encontro no Milbank, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
-    status: "Confirmado",
+      "Imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+    status: "Concluído",
   },
   {
     nome: "Mattos Filho",
     logo: mf,
     data: "27 de junho de 2025",
     descricao:
-      "Encontro com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
+      "Encontro com foco em trajetórias, competências interpessoais e cases de liderança jurídica. Tema do encontro: a definir.",
     detalhes:
-      "Durante o encontro no Mattos Filho, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
-    status: "Confirmado",
+      "A definir. Sugestões de tema encaminhadas por Ana Clara.",
+    status: "Concluído",
+  },
+  {
+    nome: "Demarest",
+    logo: demarest,
+    data: "30 de junho de 2025",
+    descricao:
+      "Apresentação da área de Life Science.",
+    detalhes:
+      "Apresentação detalhada sobre o segmento de Life Science, explorando práticas, desafios e oportunidades.",
+    status: "Concluído",
+  },
+  {
+    nome: "Pinheiro Neto",
+    logo: pinheiroNeto,
+    data: "07 de julho de 2025",
+    descricao:
+      "Encontro com foco em práticas jurídicas e experiências no escritório.",
+    detalhes:
+      "Encontro para conhecer mais sobre a cultura e práticas do escritório, além de troca com sócios e equipe.",
+    status: "Concluído",
+  },
+  {
+    nome: "Machado Meyer",
+    logo: machadoMeyer,
+    data: "03 de julho de 2025",
+    descricao:
+      "Tema do encontro: a definir.",
+    detalhes:
+      "Encontro para conhecer o escritório, cultura e oportunidades para jovens talentos.",
+    status: "Concluído",
   },
   {
     nome: "Bronstein",
@@ -99,7 +115,47 @@ const encontros: Encontro[] = [
     descricao:
       "Encontro com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
     detalhes:
-      "Durante o encontro no Bronstein, Zilberberg, Chueiri & Potenza, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+      "Imersão em soft skills essenciais para lideranças jurídicas modernas, dinâmicas e bate-papo com sócios do escritório.",
+    status: "Confirmado",
+  },
+  {
+    nome: "Galdino",
+    logo: galdino,
+    data: "14 de julho de 2025",
+    descricao:
+      "Encontro para conhecer práticas e cases do escritório.",
+    detalhes:
+      "Palestras, atividades e bate-papo com advogados do escritório. Importante: levar documento de identificação.",
+    status: "Confirmado",
+  },
+  {
+    nome: "Lefosse",
+    logo: lefosse,
+    data: "18 de julho de 2025",
+    descricao:
+      "Encontro para conhecer práticas e cultura do escritório.",
+    detalhes:
+      "Troca sobre temas atuais do direito e dinâmicas com o time Lefosse.",
+    status: "Confirmado",
+  },
+  {
+    nome: "Pravaler",
+    logo: pravaler,
+    data: "28 de julho de 2025",
+    descricao:
+      "Encontro com o Pravaler para conhecer práticas de inovação em serviços financeiros.",
+    detalhes:
+      "Palestra e dinâmica sobre o mercado financeiro, inovação e oportunidades para jovens profissionais.",
+    status: "Confirmado",
+  },
+  {
+    nome: "Google",
+    logo: google,
+    data: "01 de agosto de 2025",
+    descricao:
+      "Workshop e troca sobre o setor jurídico e inovação no Google.",
+    detalhes:
+      "Apresentação do time jurídico e interação com Nexters sobre desafios e oportunidades da área.",
     status: "Confirmado",
   },
   {
@@ -109,7 +165,7 @@ const encontros: Encontro[] = [
     descricao:
       "Discussão sobre inovação, comunicação e protagonismo de carreira no Direito.",
     detalhes:
-      "Apresentação das principais áreas: Serão três apresentações principais — Litigation, Public Policy e Música e Entretenimento — seguidas por sessões de speed dating, onde os Nexters poderão interagir com diversas áreas utilizando cartões com perguntas. Além disso, haverá um painel sobre trajetórias de carreira: Em resposta ao interesse dos Nexters em LL.M. e diferentes trajetórias profissionais.",
+      "Três apresentações principais — Litigation, Public Policy e Música e Entretenimento — seguidas por speed dating. Painel sobre trajetórias de carreira e LL.M.",
     status: "Confirmado",
   },
   {
@@ -119,7 +175,7 @@ const encontros: Encontro[] = [
     descricao:
       "Encontro 3: Com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
     detalhes:
-      "Durante o encontro no Milbank, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+      "Imersão em soft skills essenciais para lideranças jurídicas modernas, dinâmicas práticas e interação com sócios do escritório.",
     status: "Confirmado",
   },
   {
@@ -129,10 +185,11 @@ const encontros: Encontro[] = [
     descricao:
       "Encontro com foco em trajetórias, competências interpessoais e cases de liderança jurídica.",
     detalhes:
-      "Durante o encontro no Tozzini Freire, teremos uma imersão em soft skills essenciais para lideranças jurídicas modernas, com dinâmicas práticas e interação com sócios do escritório.",
+      "Imersão em soft skills essenciais para lideranças jurídicas modernas, dinâmicas práticas e interação com sócios do escritório.",
     status: "Confirmado",
   }
 ];
+
 
 
 export default function EncontrosNext() {
